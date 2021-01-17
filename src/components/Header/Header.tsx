@@ -15,7 +15,7 @@ import { useStateValue } from '../../StateProvider'
 
 const Header = () => {
 
-    const [{user}, dispatch] = useStateValue();
+    const [{user}] = useStateValue();
 
     return (
         <div className='header'>

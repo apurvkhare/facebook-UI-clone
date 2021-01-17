@@ -6,20 +6,18 @@ import { useStateValue } from '../../StateProvider'
 import './Login.css'
 
 const Login = () => {
-
-    const [state, dispatch] = useStateValue();
+    const [, dispatch] = useStateValue()
 
     const signIn = async () => {
         //TODO
-        const result =  await auth.signInWithPopup(provider);
+        const result = await auth.signInWithPopup(provider)
 
-        if(result.user){
+        if (result.user) {
             dispatch({
                 type: actionTypes.SET_USER,
-                user: result.user
+                user: result.user,
             })
         }
-
     }
 
     return (

@@ -1,5 +1,4 @@
 import { Avatar } from '@material-ui/core'
-import { url } from 'inspector'
 import React from 'react'
 import './Story.css'
 

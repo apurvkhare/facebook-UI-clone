@@ -9,7 +9,7 @@ import db from '../../firebase'
 import firebase from 'firebase'
 
 const CreatePost = () => {
-    const [{ user }, dispatch] = useStateValue()
+    const [{ user }] = useStateValue()
 
     const [input, setInput] = useState('')
     const [imgUrl, setImgUrl] = useState('')
